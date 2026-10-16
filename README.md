@@ -39,7 +39,7 @@ All paths are relative, so the site works both at a custom domain root and in a 
 All videos live in one array in **`assets/js/videos.js`**, between the `VIDEO DATA START` and `VIDEO DATA END` comments.
 
 1. Open `assets/js/videos.js`.
-2. Replace the sample entries inside `"videos": [ ... ]` with your own. Each entry looks like this:
+2. Replace or add entries inside `"videos": [ ... ]` with your own. Each entry looks like this:
 
 ```js
 {
@@ -65,7 +65,7 @@ Good to know:
 - The full description is shown, and line breaks (`\n`) are preserved.
 - Thumbnails keep their natural aspect ratio and are never cropped. If an image fails to load, a placeholder is shown.
 - The three Highlights cards on the home page filter by the tags `tutorial`, `experiment` and `review`. If you use different tag names, change the `data-filter-tag` values in `index.html`.
-- The six sample videos (titles starting with "[Sample]") use the placeholder thumbnails in `assets/generated/` and link to the channel's videos page. Delete them once you add your own.
+- Empty `date`, `duration` or `description` fields are simply hidden on the page. Videos sort newest first once every video has a date; until then they keep the order in the array.
 
 ## 3. Replace the logo
 

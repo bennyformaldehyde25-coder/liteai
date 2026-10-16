@@ -4,7 +4,7 @@
 
    HOW TO UPDATE THE VIDEOS
    1. Open this file and find the LITEAI_VIDEO_DATA block below.
-   2. Replace the sample entries inside "videos": [ ... ] with your own JSON.
+   2. Replace or add entries inside "videos": [ ... ] with your own JSON.
       Each entry supports: id, title, description, thumbnail, url, date,
       duration and tags (an array of strings).
    3. Save the file. Every tag you use appears automatically as a filter button.
@@ -14,67 +14,99 @@
    ========================================================================== */
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>> VIDEO DATA START <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Fields left empty ("date", "duration", "description") are simply not shown on the page.
+   Fill them in when you have them; videos are sorted newest first once every video has a date. */
 const LITEAI_VIDEO_DATA = {
   "videos": [
     {
-      "id": "sample-1",
-      "title": "[Sample] Run a small language model on your own laptop",
-      "description": "Placeholder entry. Replace this block with your real video data in assets/js/videos.js.\n\nThis sample shows how a full description is displayed, including line breaks.",
-      "thumbnail": "assets/generated/thumb-1.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2025-03-12",
-      "duration": "14:20",
-      "tags": ["tutorial", "local-llm", "beginner"]
+          "id": "Y9irDbB7cm8",
+          "title": "How to Install Claude Code on Windows 11 | Full Setup Guide (2026)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/Y9irDbB7cm8/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Y9irDbB7cm8",
+          "date": "",
+          "duration": "",
+          "tags": [
+                "claude-code",
+                "windows-11",
+                "install",
+                "setup-guide"
+          ]
     },
     {
-      "id": "sample-2",
-      "title": "[Sample] Comparing three open-source chat interfaces",
-      "description": "Placeholder entry. A side-by-side look at tools: setup time, features and rough edges.",
-      "thumbnail": "assets/generated/thumb-2.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2025-02-20",
-      "duration": "18:05",
-      "tags": ["review", "tools", "open-source"]
+          "id": "u6SInNdHWzA",
+          "title": "Claude Code in VS Code - Installation & Usage Guide (2026)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/u6SInNdHWzA/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=u6SInNdHWzA",
+          "date": "2026-04-10",
+          "duration": "12:11",
+          "tags": [
+                "claude-code",
+                "vs-code",
+                "install",
+                "usage-guide"
+          ]
     },
     {
-      "id": "sample-3",
-      "title": "[Sample] Experiment: how small can a useful model get?",
-      "description": "Placeholder entry. An experiment write-up: what we tried, what worked and what did not.",
-      "thumbnail": "assets/generated/thumb-3.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2025-02-02",
-      "duration": "11:47",
-      "tags": ["experiment", "local-llm", "performance"]
+          "id": "O3g2cPVM8OM",
+          "title": "Run Claude Code for Free on Windows 11 (2026)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/O3g2cPVM8OM/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=O3g2cPVM8OM",
+          "date": "",
+          "duration": "",
+          "tags": [
+                "claude-code",
+                "windows-11",
+                "free"
+          ]
     },
     {
-      "id": "sample-4",
-      "title": "[Sample] Prompting basics for everyday tasks",
-      "description": "Placeholder entry. Clear, reusable prompt patterns for writing, summarizing and planning.",
-      "thumbnail": "assets/generated/thumb-4.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2025-01-15",
-      "duration": "9:32",
-      "tags": ["tutorial", "prompting", "beginner"]
+          "id": "HGI1dco-88I",
+          "title": "How to Install Career-Ops on Windows 11 | Full Setup Guide (2026)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/HGI1dco-88I/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=HGI1dco-88I",
+          "date": "",
+          "duration": "",
+          "tags": [
+                "career-ops",
+                "windows-11",
+                "install",
+                "setup-guide"
+          ]
     },
     {
-      "id": "sample-5",
-      "title": "[Sample] Automating a small workflow with scripts",
-      "description": "Placeholder entry. Build a tiny automation step by step and learn where it can break.",
-      "thumbnail": "assets/generated/thumb-5.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2024-12-28",
-      "duration": "22:10",
-      "tags": ["tutorial", "automation", "tools"]
+          "id": "p14QNFuxQN4",
+          "title": "Run Claude Code for FREE on Windows 11 — No GPU Needed (2026)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/p14QNFuxQN4/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=p14QNFuxQN4",
+          "date": "",
+          "duration": "",
+          "tags": [
+                "claude-code",
+                "windows-11",
+                "free",
+                "no-gpu"
+          ]
     },
     {
-      "id": "sample-6",
-      "title": "[Sample] Tool review: an AI note-taking app",
-      "description": "Placeholder entry. What it does well, where it falls short and who it suits.",
-      "thumbnail": "assets/generated/thumb-6.png",
-      "url": "https://www.youtube.com/@LiteAILab/videos",
-      "date": "2024-12-05",
-      "duration": "8:15",
-      "tags": ["review", "tools", "productivity"]
+          "id": "Qwp9AbcK7-0",
+          "title": "OmniRoute + Claude Code: Free Setup on Windows 11 (2026 Update)",
+          "description": "",
+          "thumbnail": "https://i.ytimg.com/vi/Qwp9AbcK7-0/mqdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Qwp9AbcK7-0",
+          "date": "",
+          "duration": "",
+          "tags": [
+                "omniroute",
+                "claude-code",
+                "windows-11",
+                "free",
+                "setup-guide"
+          ]
     }
   ]
 };
@@ -106,7 +138,12 @@ const LITEAI_VIDEO_DATA = {
       duration: String(v.duration || ""),
       tags: Array.isArray(v.tags) ? v.tags.map(String) : []
     };
-  }).sort(function (a, b) { return b.date.localeCompare(a.date); });
+  });
+
+  // Newest first once every video has a date; otherwise keep the order given above.
+  if (videos.every(function (v) { return v.date; })) {
+    videos.sort(function (a, b) { return b.date.localeCompare(a.date); });
+  }
 
   // Unique tags, alphabetical, case-insensitive.
   var tagSet = {};
@@ -185,7 +222,7 @@ const LITEAI_VIDEO_DATA = {
     var info = el("div", { "class": "video-info" }, [
       el("h3", { text: v.title }),
       meta,
-      el("p", { "class": "video-desc", text: v.description }),
+      v.description ? el("p", { "class": "video-desc", text: v.description }) : null,
       v.tags.length ? tags : null,
       btn
     ]);
